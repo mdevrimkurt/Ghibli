@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="ghibli.css">
+</head>
+<body id="body" onload="moviesTable()">
+    <header>
+        <img src="logo.png" id="logo" alt="Studio Ghibli Logo" title="Studio Ghibli Logo">
+        <nav>
+            <ul class="ulNav"> 
+                <li><a href="index.html" >Home</a></li>
+                <li class="active"><a href="movies.html">Movies</a></li>
+                <li><a href="charts.html">Charts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id ="root">
+        <section class="movSec">   
+            <table id="movTable">                        
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>                       
+                    <th>Producer</th>
+                    <th>Release Date</th>
+                    <th>RT Score</th>
+                </tr>
+            </table>  
+        </section>
+        <section id="movDescr" class="movDescr">
+            <p id="movDesc"></p>
+        </section>
+    </main>
+
+    <script src="ghibli.js"></script>
+</body>
+</html>

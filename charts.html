@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="ghibli.css">
+</head>
+<body id="body" onload="directorsChart()">
+    <header>
+        <img src="logo.png" id="logo" alt="Studio Ghibli Logo" title="Studio Ghibli Logo">
+        <nav>
+            <ul class="ulNav"> 
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li class="active"><a href="charts.html">Charts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id ="rootCharts">
+        <ul class="sidenav" id="sidenav">
+            <li onclick="directorsChart()" id="li1" class="chartLi">Directors</li>
+            <li onclick="producersChart()" id="li2" class="chartLi">Producers</li>
+            <li onclick="scoreChart()" id="li3" class="chartLi">RT Scores</li>
+        </ul>
+
+        <section class="piechart" id="piechart">   
+        </section>
+        <!-- <section id="movDescr" class="movDescr">
+           
+        </section> -->
+    </main>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="ghibli.js"></script>
+    
+</body>
+</html>
